@@ -50,6 +50,5 @@ crypto_nn/
 ├── sieve.py            # Deterministic Sieve of Eratosthenes prime pool generator
 ├── bundle_project.py   # Release packaging and asset verification script
 ├── requirements.txt    # Minimal environment dependencies
-├── main.tex            # Manuscript LaTeX source (IEEEtran format)
 ├── references.bib      # Synchronized BibTeX bibliography
 └── Visual proof.png    # High-resolution Riemann loss convergence plot
