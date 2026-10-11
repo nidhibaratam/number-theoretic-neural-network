@@ -4,10 +4,9 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Verification Status](https://img.shields.io/badge/Telemetry-100%25%20Passed-brightgreen.svg)](#automated-telemetry--verification-suite)
 
-
 ---
 
-##  Overview
+## Overview
 
 Conventional deep learning relies heavily on continuous floating-point representations ($\mathbb{R}^{m \times n}$) and backpropagation, incurring massive compute and memory overhead on resource-constrained platforms. 
 
@@ -20,44 +19,46 @@ This repository implements a **discrete, integer-only number-theoretic neural ne
 
 ---
 
-## Empirical Telemetry Benchmarks
+## Empirical Telemetry & Real-World Benchmarks
 
 Validated via dynamic heap profiling (`tracemalloc`) and high-resolution performance timers (`time.perf_counter`):
 
-| Performance Metric | Measured Value | Operational Status / Constraint |
-| :--- | :---: | :---: |
-| **Inference Latency** | **0.3056 ms** | Optimal Real-Time Forward Pass |
-| **Peak RAM Footprint** | **5.8770 KB** | Ultra-Constraint Edge Hardware Safe |
-| **Chaos Resilience** | **Passed (0 Drift)** | Zero Mathematical Overflow under RSA Noise |
-| **Dataset Convergence** | **30 Epochs** | Stable Discrete Attractor Lock |
+| Performance Metric | Synthetic Benchmark | Real-World Iris Benchmark (`scikit-learn`) | Operational Status / Constraint |
+| :--- | :---: | :---: | :--- |
+| **Inference Latency** | **0.3056 ms** | **0.2141 ms** | Optimal Real-Time Forward Pass |
+| **Peak RAM Footprint** | **5.8770 KB** | **8.01 KB** | Ultra-Constraint Edge Hardware Safe |
+| **Classification Accuracy**| **78.0%** (Prime Density) | **46.7%** (Zero-Shot Inference) | Algebraic / Cryptographic Trade-off |
+| **Chaos Resilience** | **Passed (0 Drift)** | **Passed (0 Drift)** | Zero Mathematical Overflow under RSA Noise |
 
 ---
 
-##  Repository File Architecture
+## Repository File Architecture
 
 ```text
 crypto_nn/
-├── activations.py      # Vectorized Fermat & Wilson modular activation functions
-├── dataset_loader.py   # Synthetic prime-density classification data pipeline
-├── loss.py             # Euclidean GCD distance metric calculation
-├── network.py          # Macro architecture forward pass & Riemann gradient loops
-├── optimization.py     # Directional prime coordinate parameter projection
-├── plot_loss.py        # Matplotlib visualization engine for loss trajectory
-├── prove_system.py     # Deterministic single-sample mathematical proof test
-├── random_test.py     # Chaos stress test suite & real-time telemetry tracer
-├── rsa_wrapper.py      # Vectorized RSA public-key modular exponentiation shield
-├── run_all_tests.sh    # Automated 4-stage system validation & test suite
-├── sieve.py            # Deterministic Sieve of Eratosthenes prime pool generator
-├── bundle_project.py   # Release packaging and asset verification script
-├── requirements.txt    # Minimal environment dependencies
-├── references.bib      # Synchronized BibTeX bibliography
-└── Visual proof.png    # High-resolution Riemann loss convergence plot
-
-
+├── activations.py            # Vectorized Fermat & Wilson modular activation functions
+├── dataset_loader.py         # Synthetic prime-density classification data pipeline
+├── loss.py                   # Euclidean GCD distance metric calculation
+├── network.py                # Macro architecture forward pass & Riemann gradient loops
+├── optimization.py           # Directional prime coordinate parameter projection
+├── plot_loss.py              # Matplotlib visualization engine for loss trajectory
+├── prove_system.py           # Deterministic single-sample mathematical proof test
+├── random_test.py            # Chaos stress test suite & real-time telemetry tracer
+├── real_world_dataset_testing.py # Real-world Iris dataset import & comparative benchmark
+├── rsa_wrapper.py            # Vectorized RSA public-key modular exponentiation shield
+├── run_all_tests.sh          # Automated 4-stage system validation & test suite
+├── sieve.py                  # Deterministic Sieve of Eratosthenes prime pool generator
+├── bundle_project.py         # Release packaging and asset verification script
+├── requirements.txt          # Minimal environment dependencies (incl. scikit-learn)
+├── references.bib            # Synchronized BibTeX bibliography
+└── Visual proof.png          # High-resolution Riemann loss convergence plot
 ```
+
 ---
 
 ## Documentation
-- [Quickstart Guide](./Quickstart_Guide.md)
-- [Example Output](./Example_output.md)
----
+
+[Quickstart Guide](./Quickstart_Guide.md)
+[Example Output](./Example_output.md)
+
+--- 
