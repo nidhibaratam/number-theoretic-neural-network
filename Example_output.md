@@ -105,3 +105,25 @@ Your complete custom paradigm is archived inside:
 ==================================================
 ALL SYSTEM INTEGRITY TESTS PASSED SUCCESSFULLY!
 ==================================================
+```
+---
+### Real-World Iris Comparative Benchmark Execution (real_world_dataset_testing.py)
+To evaluate the system's zero-shot resource overhead on standardized external dimensional data, running the real-world dataset comparison script outputs the following telemetry:
+
+```text
+==================================================
+   REAL IRIS COMPARATIVE BENCHMARK EVALUATION     
+==================================================
+
+Evaluating Baseline Integer MLP on Iris Test Split...
+Evaluating Number-Theoretic Neural Network (Ours - network.py forward architecture)...
+
+==================================================
+         COMPARATIVE PERFORMANCE RESULTS          
+==================================================
+Architecture               | Accuracy | F1-Score | Latency    | RAM      
+--------------------------------------------------------------------
+Baseline Integer MLP       | 57.8%    | 0.7324   | 0.0156ms | 6.75KB
+Number-Theoretic (Ours)    | 46.7%    | 0.4000   | 0.2141ms | 8.01KB
+==================================================
+```
