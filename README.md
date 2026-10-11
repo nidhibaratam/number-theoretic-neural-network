@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Conventional deep learning relies heavily on continuous floating-point representations ($\mathbb{R}^{m \times n}$) and backpropagation, incurring massive compute and memory overhead on resource-constrained platforms. 
 
@@ -20,7 +20,7 @@ This repository implements a **discrete, integer-only number-theoretic neural ne
 
 ---
 
-## 📊 Empirical Telemetry Benchmarks
+## Empirical Telemetry Benchmarks
 
 Validated via dynamic heap profiling (`tracemalloc`) and high-resolution performance timers (`time.perf_counter`):
 
@@ -33,7 +33,7 @@ Validated via dynamic heap profiling (`tracemalloc`) and high-resolution perform
 
 ---
 
-## 📂 Repository File Architecture
+##  Repository File Architecture
 
 ```text
 crypto_nn/
